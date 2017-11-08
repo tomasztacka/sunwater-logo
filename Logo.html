@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>LOGO </title>
+
+	<style>
+	@charset "UTF-8";
+	.logo {
+		display: flex;
+		align-items: center;
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		background: linear-gradient(#FDB813 50%, #1C6BA0 0);
+		margin-top: 10px;
+		margin-left: 15px;
+	}
+	.logo:before, .logo:after {
+		flex: 1;
+		border: solid 13.33333px #1C6BA0;
+		height: 13.33333px;
+		border-radius: 50%;
+		transform-origin: 0 50%;
+		transform: scale(0.5);
+		background: #1C6BA0;
+		animation: s 1s ease-in-out infinite alternate;
+		content: "";
+	}
+	.logo:after {
+		border-color: #FDB813;
+		transform-origin: 100% 50%;
+		background: #FDB813;
+		animation-delay: -1s;
+	}
+
+	@keyframes s {
+		to {
+			transform: scale(1.5);
+		}
+	}
+	.logo-frame	{
+		width: 400px;
+		height : 100px;
+		border: 5px solid #FDB813;
+		border-radius: 90px;
+		background-color: #A8E1FA;
+	}	
+	.logo-text {
+		margin-top: -115px;
+		margin-left: 100px;
+		margin-right: 0px;
+		position: relative;
+	}	
+	.logo-text h1 {
+		font-family: 'Doppio One', sans-serif; 	
+		color: #FDB813;
+		font-size: 60px;
+	}
+	.logo-text span {
+		color: #1C6BA0;	
+	}
+
+	.logo-text p{
+			font-family: 'Doppio One', sans-serif; 	
+		color: #1C6BA0;	
+		margin-top:-20px;
+		margin-left: 10pxg
+	}					
+
+	</style>
+		</head>
+	<body>
+
+		<div class="logo-frame">
+			<div class="logo"></div>	
+			<div class="logo-text">
+				<h1>Sun<span>water</span></h1>
+			</div>
+		</div>
+
+
+	</body>
+</html>	
